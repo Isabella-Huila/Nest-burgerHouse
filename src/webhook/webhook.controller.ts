@@ -1,7 +1,7 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete, Req, Headers, UnauthorizedException } from '@nestjs/common';
 
 import Stripe from 'stripe';
-import { OrderService } from 'src/Order/order.service';
+import { OrderService } from '../Order/order.service';
 
 interface SelectedTopping {
   id: string;
@@ -34,7 +34,8 @@ export class WebhookController {
       );
     } catch (err) {
       console.log(err);
-      throw new UnauthorizedException(`Webhook Error: ${err.message}`);
+      const errorMessage = err instanceof Error ? err.message : String(err);
+      throw new UnauthorizedException(`Webhook Error: ${errorMessage}`);
     }
 
     const bodys = JSON.parse(body);

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreatePdfDto } from './dto/create-pdf.dto';
 import { UpdatePdfDto } from './dto/update-pdf.dto';
-import { SalesReport } from 'src/report/report.service';
+import { SalesReport } from '../report/report.service';
 import * as PDFDocument from 'pdfkit';
 import * as fs from 'fs';
 import * as path from 'path';

@@ -3,7 +3,7 @@ import { OrderService } from '../Order/order.service';
 import { Between, In } from 'typeorm';
 import * as moment from 'moment';
 import { OrderState } from '../Order/enums/valid-state.enums';
-import { PdfService } from 'src/pdf/pdf.service';
+import { PdfService } from '../pdf/pdf.service';
 
 export interface SalesReport {
   startDate: Date;

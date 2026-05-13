@@ -16,7 +16,7 @@ import {
 import { ReportService } from './report.service';
 import { Auth } from '../user/decorators/auth.decorator';
 import { ValidRoles } from '../user/enums/valid-roles.enum';
-import { PdfService } from 'src/pdf/pdf.service';
+import { PdfService } from '../pdf/pdf.service';
 
 enum TimeGroupBy {
   day = 'day',

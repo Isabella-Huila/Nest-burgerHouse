@@ -10,7 +10,7 @@ import { LoginUserDto } from './dto/login-user.dto';
 import { JwtPayload } from './interfaces/jwt.interface';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { isUUID } from 'class-validator';
-import { PaginationDto } from 'src/commons/dto/pagination.dto';
+import { PaginationDto } from '../commons/dto/pagination.dto';
 
 @Injectable()
 export class UserService {

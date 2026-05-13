@@ -13,7 +13,7 @@ import {
   UnauthorizedException,
   NotFoundException,
 } from '@nestjs/common';
-import { PaginationDto } from 'src/commons/dto/pagination.dto';
+import { PaginationDto } from '../commons/dto/pagination.dto';
 
 describe('UserService', () => {
   let service: UserService;

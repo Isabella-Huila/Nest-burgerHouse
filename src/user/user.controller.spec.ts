@@ -9,7 +9,7 @@ import { UnauthorizedException, NotFoundException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { PassportModule } from '@nestjs/passport';
-import { PaginationDto } from 'src/commons/dto/pagination.dto';
+import { PaginationDto } from '../commons/dto/pagination.dto';
 
 describe('UserController', () => {
   let controller: UserController;

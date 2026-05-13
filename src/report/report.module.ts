@@ -4,7 +4,7 @@ import { ReportController } from './report.controller';
 import { ReportService } from './report.service';
 import { PassportModule } from '@nestjs/passport';
 import { OrderModule } from '../Order/order.module';
-import { PdfModule } from 'src/pdf/pdf.module';
+import { PdfModule } from '../pdf/pdf.module';
 
 @Module({
   imports: [
