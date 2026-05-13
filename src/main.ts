@@ -10,7 +10,7 @@ async function bootstrap() {
   // Habilitar CORS
 const allowedOrigins = [
   'http://localhost:3000', // desarrollo
-  'https://next-burger-house-roan.vercel.app/', // producción
+  'https://next-burger-house-roan.vercel.app', // producción
 ];
 
 app.enableCors({
