@@ -32,7 +32,7 @@ import { PdfModule } from './pdf/pdf.module';
             type: 'postgres',
             url: databaseUrl,
             autoLoadEntities: true,
-            synchronize: false, // ❗ NUNCA en producción
+            synchronize: true, // ❗ NUNCA en producción
             logging: true,
             ssl: {
               rejectUnauthorized: false,
