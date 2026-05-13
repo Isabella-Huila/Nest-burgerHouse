@@ -8,7 +8,15 @@ async function bootstrap() {
   app.use('/webhook/stripe', bodyParser.raw({ type: 'application/json' }));
 
   // Habilitar CORS
-  app.enableCors();
+const allowedOrigins = [
+  'http://localhost:3000', // desarrollo
+  'https://next-burger-house-roan.vercel.app/', // producción
+];
+
+app.enableCors({
+  origin: allowedOrigins,
+  credentials: true,
+});
 
  
 
